@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Парикмахерская СЕТЬ</title>
+    <meta
+      name="description"
+      content="Парикмахерская СЕТЬ в Москве: стрижки, окрашивание, уход и укладки. Светлый сайт салона с видео, онлайн-записью и новостями."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#top" aria-label="Парикмахерская СЕТЬ">
+          <img class="brand__logo" src="./assets/images/logo-mark.svg" alt="Логотип Парикмахерская СЕТЬ">
+          <span class="brand__copy">
+            <strong>ПАРИКМАХЕРСКАЯ СЕТЬ</strong>
+            <span>Москва, ул. Воронцовская, 22</span>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Меню
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Навигация">
+          <a href="#prices">Цены</a>
+          <a href="#location">Локация</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <a class="button button--primary button--header" data-booking-link href="#">
+          ЗАПИСАТЬСЯ ОНЛАЙН
+        </a>
+      </div>
+    </header>
+    <section class="news-ticker" aria-label="Новости">
+      <div class="news-ticker__viewport">
+        <div class="news-ticker__track" data-news-ticker-track></div>
+      </div>
+    </section>
+
+    <main id="top">
+      <section class="hero-media">
+        <div class="hero-media__frame">
+          <video
+            class="hero-media__video"
+            data-hero-video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Видео салона"
+          ></video>
+          <div class="hero-media__fallback" data-hero-fallback>
+            <span>Видео-блок готов</span>
+            <strong>Видео салона будет здесь по ширине экрана</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-summary">
+        <div class="container hero-summary__grid">
+          <div class="hero-summary__visual-column" data-hero-visual hidden>
+            <div
+              class="hero-summary__visual hero-summary__visual--lead hero-summary__carousel"
+              data-hero-carousel
+            >
+              <img
+                class="hero-summary__photo"
+                data-hero-carousel-img
+                alt=""
+                width="720"
+                height="960"
+                decoding="async"
+              >
+            </div>
+          </div>
+
+          <div class="hero-summary__column">
+            <div class="hero-summary__main">
+              <p class="eyebrow">Парикмахерская СЕТЬ</p>
+              <h1 class="visually-hidden">Парикмахерская СЕТЬ — салон красоты, Москва</h1>
+              <p class="hero-summary__lead hero-summary__lead--hero" data-hero-lead>
+                Парикмахерская сеть - это мастера которые специализируются на индивидуальности своих клиентов.
+                Наша цель — дать почувствовать, что в этот момент вы — единственные, кто имеет значение в этом
+                мире. Ваш путь к красоте начинается здесь
+              </p>
+              <div class="hero-actions">
+                <a class="button button--ghost" href="#prices">Смотреть услуги</a>
+              </div>
+            </div>
+
+            <aside class="hero-summary__contacts">
+              <div class="hero-contact">
+                <span>Адрес</span>
+                <strong>Москва, ул. Воронцовская 22</strong>
+              </div>
+              <div class="hero-contact">
+                <span>Телефон</span>
+                <a href="tel:+79167889466">8 916 788 9466</a>
+              </div>
+              <div class="hero-contact">
+                <span>Email</span>
+                <a href="mailto:parikmaherskayaset@yandex.com">parikmaherskayaset@yandex.com</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--prices section--after-hero" id="prices">
+        <div class="container">
+          <div class="section-heading section-heading--title-only">
+            <h2>Услуги и цены</h2>
+          </div>
+          <div class="price-list" id="pricing-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section--location" id="location">
+        <div class="container location-layout">
+          <div class="location-card">
+            <p class="eyebrow">Контакты</p>
+            <h2>Парикмахерская СЕТЬ</h2>
+            <div class="contact-list">
+              <a href="tel:+79167889466">8 916 788 9466</a>
+              <a href="mailto:parikmaherskayaset@yandex.com">parikmaherskayaset@yandex.com</a>
+              <p>Москва, ул. Воронцовская 22</p>
+            </div>
+            <a class="button button--primary" data-booking-link href="#">ЗАПИСАТЬСЯ ОНЛАЙН</a>
+          </div>
+          <div class="location-map-wrap">
+            <iframe
+              class="location-map-embed"
+              title="Карта проезда к Парикмахерской СЕТЬ"
+              src="https://www.google.com/maps?q=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D1%83%D0%BB.%20%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D1%86%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2022&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contacts">
+      <div class="container site-footer__grid">
+        <div>
+          <p class="eyebrow">Контакты</p>
+          <h2>Парикмахерская СЕТЬ</h2>
+        </div>
+
+        <div class="contact-list">
+          <a href="tel:+79167889466">8 916 788 9466</a>
+          <a href="mailto:parikmaherskayaset@yandex.com">parikmaherskayaset@yandex.com</a>
+          <p>Москва, ул. Воронцовская 22</p>
+        </div>
+
+        <div class="footer-note">
+          <p>Базовая структура собрана как отдельный проект и готова к дальнейшему наполнению.</p>
+          <p>Следующий шаг: поставить ссылку записи, выбрать фото и при желании добавить мастеров, прайс и отзывы.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
