@@ -407,8 +407,7 @@ select {
 }
 
 .hero-contact a,
-.hero-contact strong,
-.contact-list a {
+.hero-contact strong {
   font-size: 1rem;
   font-weight: 400;
   overflow-wrap: anywhere;
@@ -689,7 +688,7 @@ select {
 
 .location-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.42fr) minmax(0, 1fr);
+  grid-template-columns: minmax(380px, 0.6fr) minmax(0, 1fr);
   gap: 20px;
   align-items: stretch;
 }
@@ -721,6 +720,10 @@ select {
 
 .location-card .contact-list {
   gap: 10px;
+}
+
+.location-card .contact-list__email {
+  white-space: nowrap;
 }
 
 .location-card .button {
@@ -846,7 +849,7 @@ select {
 .site-footer__grid {
   padding: 36px 42px;
   display: grid;
-  grid-template-columns: 1.1fr 0.8fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 26px;
   background: #ffffff;
   border: 1px solid var(--line);
@@ -863,6 +866,11 @@ select {
 .contact-list p {
   margin: 0;
   font-size: 1.02rem;
+}
+
+.contact-list a {
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .footer-note p {
