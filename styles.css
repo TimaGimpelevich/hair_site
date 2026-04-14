@@ -248,8 +248,16 @@ select {
 }
 
 .social-link--max {
-  font-size: 0.64rem;
-  letter-spacing: 0.06em;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.social-link__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .social-links--location {
