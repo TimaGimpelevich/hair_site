@@ -247,17 +247,23 @@ select {
   display: block;
 }
 
+.social-link__vk-mark {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
 .social-link--max {
   background: linear-gradient(160deg, var(--green), var(--green-dark));
   box-shadow: 0 8px 18px rgba(99, 170, 54, 0.26);
 }
 
 .social-link__img {
-  width: 78%;
-  height: 78%;
+  width: 74%;
+  height: 74%;
   object-fit: contain;
   display: block;
-  border-radius: 50%;
 }
 
 .social-links--location {
@@ -1161,6 +1167,10 @@ select {
   .social-link svg {
     width: 18px;
     height: 18px;
+  }
+
+  .social-link__vk-mark {
+    font-size: 0.82rem;
   }
 
   .location-map {
