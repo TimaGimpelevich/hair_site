@@ -251,6 +251,12 @@ select {
   font-size: 0;
 }
 
+.social-link--max svg {
+  width: 22px;
+  height: 22px;
+  shape-rendering: geometricPrecision;
+}
+
 .social-links--location {
   margin-top: 4px;
 }
