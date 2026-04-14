@@ -215,6 +215,47 @@ select {
   gap: 26px;
 }
 
+.social-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: linear-gradient(160deg, var(--green), var(--green-dark));
+  box-shadow: 0 8px 18px rgba(99, 170, 54, 0.26);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(99, 170, 54, 0.32);
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.social-link--max {
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+}
+
+.social-links--location {
+  margin-top: 4px;
+}
+
 .site-nav a,
 .menu-toggle {
   color: var(--text);
@@ -944,12 +985,20 @@ select {
 }
 
 @media (max-width: 900px) {
+  html {
+    font-size: 100%;
+  }
+
   .site-header__inner {
     display: flex;
     flex-wrap: wrap;
     min-height: auto;
     gap: 16px;
-    padding: 18px 0;
+    padding: 12px 0;
+  }
+
+  .brand {
+    flex: 1 1 auto;
   }
 
   .menu-toggle {
@@ -957,7 +1006,16 @@ select {
     margin-left: auto;
   }
 
+  .button--header {
+    order: 4;
+    width: 100%;
+    min-height: 48px;
+    padding: 0 18px;
+    font-size: 0.86rem;
+  }
+
   .site-nav {
+    order: 3;
     width: 100%;
     display: none;
     flex-direction: column;
@@ -973,8 +1031,13 @@ select {
     display: flex;
   }
 
+  .social-links--header {
+    margin-top: 4px;
+  }
+
   .news-ticker {
-    top: 84px;
+    position: static;
+    top: auto;
   }
 
   .services-grid,
@@ -990,6 +1053,30 @@ select {
     grid-column: span 1;
     min-height: 0;
   }
+
+  .section {
+    padding: 64px 0 82px;
+  }
+
+  .section--after-hero {
+    padding-top: 24px;
+  }
+
+  .hero-summary__column {
+    gap: 20px;
+  }
+
+  .hero-summary__lead {
+    margin-top: 12px;
+  }
+
+  .hero-contact {
+    padding: 16px 18px;
+  }
+
+  .location-card .button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 560px) {
@@ -998,29 +1085,40 @@ select {
   }
 
   .site-header__inner {
-    padding: 14px 0;
+    gap: 12px;
+    padding: 10px 0;
   }
 
   .brand__logo {
-    width: 74px;
+    width: 62px;
   }
 
   .brand__copy strong {
-    font-size: 0.84rem;
+    font-size: 0.78rem;
   }
 
   .brand__copy span {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
   }
 
-  .hero-actions .button {
+  .hero-actions .button,
+  .button--header {
+    width: 100%;
     min-height: 48px;
     padding: 0 18px;
     font-size: 0.86rem;
   }
 
   .section {
-    padding-bottom: 86px;
+    padding: 52px 0 70px;
+  }
+
+  .hero-media {
+    padding-top: 4px;
+  }
+
+  .hero-summary {
+    padding-top: 12px;
   }
 
   .price-row {
@@ -1039,6 +1137,22 @@ select {
 
   .location-card {
     padding: 20px;
+  }
+
+  .location-card .contact-list__email {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .social-link {
+    width: 34px;
+    height: 34px;
+  }
+
+  .social-link svg {
+    width: 18px;
+    height: 18px;
   }
 
   .location-map {
