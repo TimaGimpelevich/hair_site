@@ -248,16 +248,16 @@ select {
 }
 
 .social-link--max {
-  padding: 0;
-  overflow: hidden;
-  background: #ffffff;
+  background: linear-gradient(160deg, var(--green), var(--green-dark));
+  box-shadow: 0 8px 18px rgba(99, 170, 54, 0.26);
 }
 
 .social-link__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 72%;
+  height: 72%;
+  object-fit: contain;
   display: block;
+  filter: grayscale(1) brightness(0);
 }
 
 .social-links--location {
