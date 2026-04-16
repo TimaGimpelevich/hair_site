@@ -229,8 +229,8 @@ select {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  background: linear-gradient(160deg, var(--green), var(--green-dark));
-  box-shadow: 0 8px 18px rgba(99, 170, 54, 0.26);
+  background-color: #74c343;
+  box-shadow: none;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
@@ -238,12 +238,12 @@ select {
 
 .social-link:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 20px rgba(99, 170, 54, 0.32);
+  box-shadow: none;
 }
 
 .social-link svg {
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   display: block;
 }
 
@@ -252,8 +252,8 @@ select {
 }
 
 .social-link--max svg {
-  width: 22px;
-  height: 22px;
+  width: 21px;
+  height: 21px;
   shape-rendering: geometricPrecision;
 }
 
