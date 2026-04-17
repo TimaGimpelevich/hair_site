@@ -275,6 +275,10 @@ select {
   font-size: 0.92rem;
 }
 
+.site-nav .social-link {
+  color: #ffffff;
+}
+
 .menu-toggle {
   display: none;
   padding: 10px 14px;
