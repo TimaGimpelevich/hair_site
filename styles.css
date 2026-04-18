@@ -1043,6 +1043,10 @@ select {
     min-width: 0;
   }
 
+  .brand__logo {
+    width: 88px;
+  }
+
   .menu-toggle {
     display: inline-flex;
     align-items: center;
@@ -1178,15 +1182,15 @@ select {
   }
 
   .brand__logo {
-    width: 62px;
+    width: 96px;
   }
 
   .brand__copy strong {
-    font-size: 0.78rem;
+    font-size: 0.84rem;
   }
 
   .brand__copy span {
-    font-size: 0.72rem;
+    font-size: 0.76rem;
   }
 
   .hero-actions .button,
