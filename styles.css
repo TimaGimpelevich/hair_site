@@ -197,7 +197,7 @@ select {
 }
 
 .brand__logo {
-  width: 72px;
+  width: 88px;
   height: auto;
   flex-shrink: 0;
 }
@@ -1044,7 +1044,7 @@ select {
   }
 
   .brand__logo {
-    width: 88px;
+    width: 108px;
   }
 
   .menu-toggle {
@@ -1182,7 +1182,7 @@ select {
   }
 
   .brand__logo {
-    width: 96px;
+    width: 118px;
   }
 
   .brand__copy strong {
